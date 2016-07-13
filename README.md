@@ -1,2 +1,2 @@
 # u-portfolio
-Udacity Project: Build a Portfolio Site
+Udacity Project 05: Build a Portfolio Site
