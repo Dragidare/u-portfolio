@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:200,400,300,700);
 * {
     font-family: 'Lato', sans-serif;
 }
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-.grid {
+.container {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
@@ -69,4 +69,77 @@
 
 .col-12 {
     width: 100%;
+}
+
+h1, h3{
+   color: #2d3c49;
+
+}
+h1 {
+  font-weight: 200;
+  font-size: 55px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #7d97ad;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header-right {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.logo-img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header {
+  border-bottom: 3px solid #7d97ad;
+}
+
+.projects  img {
+  width: 100%;
+}
+
+.main_img > img {
+  width: 100%;
+}
+.projects > div {
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+}
+
+.projects > div:last-of-type{
+  margin-right: 0;
+}
+
+.projects {
+  text-align: center;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.projects h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.projects p {
+  margin: 0 auto;
 }
