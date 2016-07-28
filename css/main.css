@@ -113,7 +113,7 @@ h3 {
   width: 100%;
 }
 
-.main_img > img {
+.main_img img {
   width: 100%;
 }
 .projects > div {
@@ -142,4 +142,50 @@ h3 {
 }
 .projects p {
   margin: 0 auto;
+}
+ /* ipad media queries */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+  .projects a {
+  font-size: 1.3em;
+  padding: 15px;
+  }
+}
+
+/* iphone 5 and nexus5 media queries */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .projects > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .projects a {
+    font-size: 1.3em;
+    padding: 15px;
+  }
+  .projects p {
+    padding-bottom: 15px;
+  }
+  .logo-img {
+    width: 20%;
+  }
+  .header-right {
+    width: 80%;
+  }
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.7em;
+  }
+  }
+  h3 {
+    font-size: 1.36em;
+  }
+  .projects h3 {
+
+    font-size: 1.36em;
+
+
+  }
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -14,12 +15,16 @@
       </div>
       <div class="col-6 header-right">
         <h1>Darko Antic</h1>
-        <h3>Front-end dragiDare<h3>
+        <h3>Front-end developer<h3>
       </div>
     </header>
   <div class="row">
     <div class="col-12 main_img">
-      <img src="http://placehold.it/1200x350" alt="main_img">
+      <picture>
+        <source srcset="img/frank_sm.jpg" media="(max-width: 568px)">
+          <source srcset="img/frank.jpg">
+            <img src="img/frank.jpg" alt="main_img">
+      </picture>
     </div>
   </div>
   <div class="row">
@@ -29,17 +34,17 @@
   </div>
     <section class="row projects">
       <div class="col-4">
-        <img src="http://placehold.it/400x200" alt="logo_img">
+        <img src="img/proj01.jpg" alt="logo_img">
         <h3>Project01</h3>
         <p><a href="http://github.com">Link to project</a></p>
       </div>
       <div class="col-4">
-        <img src="http://placehold.it/400x200" alt="logo_img">
+        <img src="img/proj02.jpg" alt="logo_img">
         <h3>Project01</h3>
         <p><a href="http://github.com">Link to project</a></p>
       </div>
       <div class="col-4">
-        <img src="http://placehold.it/400x200" alt="logo_img">
+        <img src="img/proj03.jpg" alt="logo_img">
         <h3>Project01</h3>
         <p><a href="http://github.com">Link to project</a></p>
       </div>
