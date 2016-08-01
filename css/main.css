@@ -1,80 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:200,400,300,700);
-* {
-    font-family: 'Lato', sans-serif;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.row {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
 
 h1, h3{
    color: #2d3c49;
 
 }
+
 h1 {
   font-weight: 200;
   font-size: 55px;
@@ -90,7 +19,7 @@ h2 {
   margin-left: 10px;
 }
 
-h3 {
+h3, .header-small {
   margin-top: 0;
   font-size: 24px;
   font-weight: 400;
@@ -105,6 +34,7 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .header {
   border-bottom: 3px solid #7d97ad;
 }
@@ -113,15 +43,16 @@ h3 {
   width: 100%;
 }
 
-.main_img > img {
+.main_img img {
   width: 100%;
 }
+
 .projects > div {
   width: calc((100% - 40px) / 3);
   margin-right: 20px;
 }
 
-.projects > div:last-of-type{
+.projects > div:last-of-type {
   margin-right: 0;
 }
 
@@ -140,6 +71,58 @@ h3 {
   margin-bottom: 0;
   margin-top: 10px;
 }
+
 .projects p {
   margin: 0 auto;
+}
+
+ /* ipad media queries */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .projects a {
+  font-size: 1.3em;
+  padding: 15px;
+  }
+}
+
+/* iphone 5 and nexus5 media queries */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  .projects > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .projects a {
+    font-size: 1.3em;
+    padding: 15px;
+  }
+
+  .projects p {
+    padding-bottom: 15px;
+  }
+
+  .logo-img {
+    width: 20%;
+  }
+
+  .header-right {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 2.4em;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.7em;
+  }
+
+  h3, .header-small {
+    font-size: 1.36em;
+  }
+
+  .projects h3 {
+    font-size: 1.36em;
+
+  }
 }
